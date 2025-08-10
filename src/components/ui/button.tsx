@@ -9,18 +9,19 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-gradient-primary text-primary-foreground hover:shadow-neon transition-all duration-300 transform hover:scale-105",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border border-neon-purple/30 bg-gradient-glass backdrop-blur-glass text-foreground hover:border-neon-pink/50 hover:shadow-glow transition-all duration-300",
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
-        hero: "bg-gradient-hero text-primary-foreground hover:shadow-glow transition-all duration-300 transform hover:scale-105",
-        emergency: "bg-gradient-emergency text-emergency-foreground hover:shadow-emergency transition-all duration-300 transform hover:scale-105",
-        service: "bg-background text-foreground border border-border hover:shadow-service transition-all duration-300 hover:border-primary/30",
+          "bg-gradient-card text-secondary-foreground hover:shadow-service transition-all duration-300",
+        ghost: "hover:bg-gradient-glass hover:text-accent-foreground backdrop-blur-glass transition-all duration-300",
+        link: "text-neon-cyan underline-offset-4 hover:underline hover:text-neon-pink transition-colors duration-300",
+        hero: "bg-gradient-hero text-primary-foreground hover:shadow-glow transition-all duration-500 transform hover:scale-105 hover:-translate-y-1",
+        emergency: "bg-gradient-emergency text-emergency-foreground hover:shadow-emergency transition-all duration-300 transform hover:scale-105 animate-pulse",
+        service: "bg-gradient-glass backdrop-blur-glass text-foreground border border-neon-purple/20 hover:shadow-neon hover:border-neon-cyan/40 transition-all duration-300 transform hover:scale-102",
+        neon: "bg-gradient-to-r from-neon-pink to-neon-purple text-primary-foreground hover:from-neon-cyan hover:to-neon-pink hover:shadow-neon transition-all duration-500 transform hover:scale-105",
       },
       size: {
         default: "h-10 px-4 py-2",

@@ -22,11 +22,19 @@ export default {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-hero': 'var(--gradient-hero)',
 				'gradient-emergency': 'var(--gradient-emergency)',
+				'gradient-success': 'var(--gradient-success)',
+				'gradient-glass': 'var(--gradient-glass)',
+				'gradient-card': 'var(--gradient-card)',
+			},
+			backdropBlur: {
+				'glass': '20px',
 			},
 			boxShadow: {
 				'service': 'var(--shadow-service)',
 				'emergency': 'var(--shadow-emergency)',
 				'glow': 'var(--shadow-glow)',
+				'neon': 'var(--shadow-neon)',
+				'glass': 'var(--shadow-glass)',
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -50,6 +58,13 @@ export default {
 				success: {
 					DEFAULT: 'hsl(var(--success))',
 					foreground: 'hsl(var(--success-foreground))'
+				},
+				neon: {
+					pink: 'hsl(var(--neon-pink))',
+					cyan: 'hsl(var(--neon-cyan))',
+					purple: 'hsl(var(--neon-purple))',
+					green: 'hsl(var(--neon-green))',
+					orange: 'hsl(var(--neon-orange))',
 				},
 				destructive: {
 					DEFAULT: 'hsl(var(--destructive))',

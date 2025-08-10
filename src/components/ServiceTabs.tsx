@@ -173,26 +173,26 @@ export const ServiceTabs = () => {
         </div>
         
         <Tabs defaultValue="emergency" className="w-full">
-          <TabsList className="grid w-full grid-cols-5 mb-8 h-auto p-1">
-            <TabsTrigger value="emergency" className="flex flex-col gap-1 py-3 data-[state=active]:bg-emergency data-[state=active]:text-emergency-foreground">
+          <TabsList className="grid w-full grid-cols-5 mb-8 h-auto p-1 bg-gradient-glass backdrop-blur-glass border border-neon-purple/20">
+            <TabsTrigger value="emergency" className="flex flex-col gap-1 py-3 data-[state=active]:bg-gradient-emergency data-[state=active]:text-emergency-foreground data-[state=active]:shadow-emergency transition-all duration-300">
               <Shield className="w-5 h-5" />
-              <span className="text-xs font-medium">Emergency</span>
+              <span className="text-xs font-medium">🚨 Emergency</span>
             </TabsTrigger>
-            <TabsTrigger value="fuel" className="flex flex-col gap-1 py-3">
+            <TabsTrigger value="fuel" className="flex flex-col gap-1 py-3 data-[state=active]:bg-gradient-to-r data-[state=active]:from-neon-orange data-[state=active]:to-neon-pink data-[state=active]:text-white transition-all duration-300">
               <Fuel className="w-5 h-5" />
-              <span className="text-xs font-medium">Fuel</span>
+              <span className="text-xs font-medium">⛽ Fuel</span>
             </TabsTrigger>
-            <TabsTrigger value="charging" className="flex flex-col gap-1 py-3">
+            <TabsTrigger value="charging" className="flex flex-col gap-1 py-3 data-[state=active]:bg-gradient-success data-[state=active]:text-white transition-all duration-300">
               <Zap className="w-5 h-5" />
-              <span className="text-xs font-medium">EV Charging</span>
+              <span className="text-xs font-medium">⚡ EV Charging</span>
             </TabsTrigger>
-            <TabsTrigger value="maintenance" className="flex flex-col gap-1 py-3">
+            <TabsTrigger value="maintenance" className="flex flex-col gap-1 py-3 data-[state=active]:bg-gradient-primary data-[state=active]:text-white transition-all duration-300">
               <Wrench className="w-5 h-5" />
-              <span className="text-xs font-medium">Maintenance</span>
+              <span className="text-xs font-medium">🔧 Maintenance</span>
             </TabsTrigger>
-            <TabsTrigger value="logistics" className="flex flex-col gap-1 py-3">
+            <TabsTrigger value="logistics" className="flex flex-col gap-1 py-3 data-[state=active]:bg-gradient-to-r data-[state=active]:from-neon-cyan data-[state=active]:to-neon-purple data-[state=active]:text-white transition-all duration-300">
               <Truck className="w-5 h-5" />
-              <span className="text-xs font-medium">Logistics</span>
+              <span className="text-xs font-medium">📦 Logistics</span>
             </TabsTrigger>
           </TabsList>
 
